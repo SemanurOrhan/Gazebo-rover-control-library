@@ -1,0 +1,15 @@
+ilk terminal: gazebo
+	gz sim -v4 -r r1_rover_runway.sdf
+
+ikinci terminal ardupilot
+	sim_vehicle.py -v Rover -f gazebo-rover --console --map --model JSON
+
+
+önce mode guided sonra arm throttle sonra mappde şuraya uç de
+
+
+
+
+./waf derlemek için 
+	./waf configure --board sitl
+	./waf copter (ya da) rover
